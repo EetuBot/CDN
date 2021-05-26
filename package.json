@@ -20,6 +20,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "fs": "0.0.1-security",
-    "helmet": "^4.6.0"
+    "helmet": "^4.6.0",
+    "serverless-http": "^2.7.0"
   }
 }
