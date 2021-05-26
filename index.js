@@ -1,9 +1,8 @@
 const express = require('express')
 const app = express()
-//const config = require('./config.json')
+const config = require('./config.json')
 const fs = require('fs')
 const helmet = require('helmet')
-const serverless = require('serverless-http');
 
 app.use(helmet())
 app.use(express.static('public'))
@@ -26,4 +25,4 @@ app.get('*', (req, res) => {
   })
 })
  
-module.exports.handler = serverless(app);
+app.listen(config.port)
